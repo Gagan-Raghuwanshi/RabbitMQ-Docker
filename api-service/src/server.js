@@ -46,6 +46,13 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get("/", async (req, res) => {
+  return res.status(200).json({
+    success: true,
+    message: "API Server is running..."
+  });
+});
+
 
 async function gracefulShutdown() {
   console.log('Shutdown signal received, shutting down gracefully...');

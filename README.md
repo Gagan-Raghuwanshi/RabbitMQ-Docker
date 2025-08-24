@@ -1,26 +1,57 @@
-# Microservice Application
+Microservice Application
 
-A complete microservice-based application with messaging, caching, and secure authentication.
+A complete microservice-based application built with Node.js that supports messaging, caching, and secure authentication.
 
-## Features
+Features
 
-- ✅ REST API with Node.js/Express
-- ✅ JWT-based authentication
-- ✅ Redis caching
-- ✅ RabbitMQ messaging
-- ✅ Role-based access control
-- ✅ Docker containerization
-- ✅ CI/CD pipeline
-- ✅ API documentation
+✅ REST API built with Node.js/Express
 
-## Prerequisites
+✅ JWT-based authentication
 
-- Docker and Docker Compose
-- Node.js 18+ (for development)
+✅ Redis caching for improved performance
 
-## Quick Start
+✅ RabbitMQ messaging for asynchronous communication
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
+✅ Role-based access control
+
+✅ Docker containerization for easy deployment
+
+Prerequisites
+
+Docker
+ and Docker Compose
+ installed
+
+Node.js environment: node:22-alpine (for development)
+
+Quick Start
+
+Clone the repository:
+
+git clone https://github.com/Gagan-Raghuwanshi/RabbitMQ-Docker.git
 cd microservice-app
+
+
+Start the application with Docker Compose:
+
+docker compose up --build -d
+
+
+Verify containers are running:
+
+docker ps
+
+
+Access the API:
+
+Open Postman or your browser and visit:
+
+http://localhost:3000
+
+
+Expected response:
+
+{
+    "success": true,
+    "message": "API Server is running..."
+}
