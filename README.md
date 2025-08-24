@@ -34,7 +34,7 @@ docker compose up --build -d
 3. Verify containers are running:
 
 ```bash
-- docker ps
+docker ps
 ```
 
 4. Open Postman or browser:
