@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  api-service:
+    build: ./api-service
+    container_name: api-service
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./api-service/.env
+    depends_on:
+      - consumer-service
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  consumer-service:
+    build: ./consumer-service
+    container_name: consumer-service
+    env_file:
+      - ./consumer-service/.env
+    networks:
+      - app-network
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge
