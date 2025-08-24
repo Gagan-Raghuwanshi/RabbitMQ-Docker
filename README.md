@@ -25,11 +25,24 @@ git clone https://github.com/Gagan-Raghuwanshi/RabbitMQ-Docker.git
 cd microservice-app
 ```
 
-2. docker compose up --build -d
+2. Start the application with Docker Compose:
+
+```bash
+docker compose up --build -d
+```
+
 3. Verify containers are running:
+
+```bash
 - docker ps
+```
+
 4. Open Postman or browser:
-- http://localhost:3000
+
+```bash
+http://localhost:3000
+
+```
 
 Expected response:
 {
