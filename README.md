@@ -22,7 +22,7 @@ A complete microservice-based application with messaging, caching, and secure au
 
 ```bash
 git clone https://github.com/Gagan-Raghuwanshi/RabbitMQ-Docker.git
-cd microservice-app
+cd RabbitMQ-Docker
 ```
 
 2. Start the application with Docker Compose:
